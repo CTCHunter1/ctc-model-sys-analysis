@@ -1,4 +1,4 @@
-# ctc-model-sys-analysis
+# matlab-imagej-image-cytometry
 This is Matlab software. 
 
 process_imagej.m will segment .lsm microscopy files into regions of interest and compute metrics with the function computeROIFeatures.m. The resulting features are output in a .mat file containing a structure with a substructure for each channel containing the individual features. 
