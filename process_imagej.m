@@ -52,7 +52,7 @@ MIJ.start([pwd, filesep, 'ImageJ', filesep, 'IJ150' filesep, 'plugins']);
 
 
 if (nargin < 1)
-    [filename, pathname] = uigetfile('*.oib; *.lsm', 'Pick a Image file (OIB, LSM)', '');    
+    [filename, pathname] = uigetfile('*.oib; *.lsm', 'Pick a Image file (OIB, LSM)', 'Example Data\');    
     if isequal(filename,0) || isequal(pathname,0)
        return; % user pressed cancel
     end    
