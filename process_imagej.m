@@ -37,6 +37,12 @@ end
 % Miji();
 % cd(wdir);
 
+if exist(['ImageJ', filesep, 'IJ150'], 'dir') == 0
+    fprintf('First Run. Unzipping ImageJ...\n');
+    unzip(['ImageJ', filesep, 'ij150.zip'], ['ImageJ']);
+    movefile(['ImageJ', filesep, 'ImageJ'], ['ImageJ', filesep, 'IJ150']);    
+end
+
 %Add imagej path
 if(exist('MIJ') ~= 8)
     javaaddpath 'MIJ\MIJ1.3.9\mij.jar'
